@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* start code */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-space-between{
+    justify-content: space-between;
+    /* margin: 0 auto; */
+}
+.flex-space-evenly{
+    justify-content: space-evenly;
+}
+.button{
+    font-size: 15px;
+    border-radius: 0px;
+    border: 1px  solid black;
+    margin: 20px 0px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #fff;
+
+}
+/* header */
+.header-bgi{
+    background-image: url(../images/banner.svg);
+    background-color: #323347;
+    background-size: cover;
+}
+header nav{
+    text-transform: uppercase;
+    padding: 20px 0px;
+    font-size: 12px;
+}
+nav a{
+    padding-right: 20px;
+    text-decoration-line: none;
+    color: #FFFFFF;
+}
+.logo{
+    font-size: 15px;
+    padding: 20px 0px;
+    color: #FFFFFF;
+}
+.header-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+/* hero section */
+.hero{
+    text-align:center;
+    padding: 100px 0px;
+}
+.hero-header{
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hero-sub-heading{
+    padding-bottom: 40px;
+    color: #E96C77;
+}
+.hero-button{
+    height: 40px;
+    width: 150px;
+    border-radius: 0px;
+    box-shadow: none;
+    /* outline: none; */
+    border: none;
+   background-color: #E96C77;
+   color: white;
+   font-weight: 600;
+   font-size: 13px;
+   text-transform: uppercase;
+}
+/* section 2 */
+.sec2-padding{
+    padding: 70px 0px;
+    background: #F5F5F5;
+}
+.sec2-header{
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: 600; 
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.sec2-para{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.sec2-container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.sec2-box{
+    width: 32%;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0px;   
+}
+.sec2-box-header{
+    text-align: center;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+.sec2-box-para{
+    text-align: justify;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+.create-image{
+    height: 70px;
+    width: 70px;
+    background-color: #E96C77;
+    margin: 10px auto;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.fa-map-marker-alt,
+.fa-phone,
+.fa-envelope,
+.fa-twitter,
+.fa-facebook-f,
+.fa-linkedin-in,
+
+.fa-tint, .fa-cog, .fa-user, .fa-desktop, .fa-check, .fa-chart-bar{
+    color: white;
+    font-size: 20px;
+}
+/* section 3 */
+.sec3-container{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: #EC828C; */
+    padding: 70px 0px;
+    color: white;
+}
+.sec3-background-color{
+    background-color: #E96C77;
+}
+.sec3-header{
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 20px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.sec3-para{
+    font-size: 13px;
+    line-height: 1.6;
+    color: white;
+}
+.sec3-box{
+    width: 48%;
+    background-color: #EC828C;  
+    margin: 20px 0px;
+    line-height: 1.8;
+    padding: 20px 0px;
+}
+.icons-bgc{
+    background-color: #5B5C6B;
+}
+/* section 4 */
+.sec4-bgc{
+    background-color: #fff;
+}
+.sec4-container{
+   max-width:1100px;
+}
+.responsive-image{
+    width: 100%;
+}
+.sec4-box{
+    padding: 0px 0px 20px 0px;
+}
+
+.sec5-container{
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px 0px;
+    background-color: white;
+}
+.sec5-box1{
+      width: 60%;
+      background-color:white;
+      /* padding: 20px; */
+
+}
+.sex5-box2{
+      width: 45%;
+      background-color: white;
+      padding: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    border-radius: 0px;
+    font-size: 15px;
+    text-transform: capitalize;
+    border: 1px solid black;
+}
+.send-button{
+    background-color: #E96C77;
+    color: white;
+}
+.read-button{
+   background-color: #E96C77;
+   color: white;
+   margin-right: 20px;    
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    background-color: #5B5C6B;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    /* margin-right: 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.contacts-div{
+    width: 100%;
+    line-height: 1,6;
+}
+
+.small-circle{
+    width: 30px;
+    height: 30px;
+    background-color: #5B5C6B;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.contact-para{
+    line-height: 1.7;
+    padding: 10px;
+    font-size: 14px;
+    color: #5a5959;   
+}
+li{
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+}
+li:last-child{
+    border-bottom: none;
+}
+.twitter{
+    background-color: rgb(60, 176, 230); 
+}
+.facebook{
+    background-color: #456BC9;
+}
+.linkedin{
+    background-color: #3492D9;
+}
+/* footer */
+footer{
+    padding: 70px 0px;
+    color: black;
+    text-align: center;
+}
+footer nav{
+    text-align: center; 
+    /* background-color: chartreuse; */
+}
+footer nav a{
+    color: black;
+    border-right: black;
+}
+.copy{
+    padding: 20px 0px;
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+}
